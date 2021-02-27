@@ -1,0 +1,25 @@
+<div class="py-4">
+  <div class="flex flex-row items-center mb-6">
+    <img class="h-6 w-6 mr-1" src="assets/image/icon.svg">
+    <span class="font-bold text-black text-2xl">hashnode</span>
+  </div>
+
+  <div>
+    <a class="bg-blue-600 py-3 px-4 rounded text-white text-bold flex flex-row items-center text-md font-bold hover:bg-blue-800 justify-center cursor-pointer">
+      <img class="h-6 w-6 mr-2" src="assets/image/add-circle-outline.svg">
+      Write
+    </a>
+
+    <hr class="border-t border-gray-200 my-2">
+
+    <ng-container *ngFor="let item of menus">
+      <div class="flex flex-row py-2 px-3 text-gray-500 text-md font-semibold hover:text-blue-600 hover:bg-white hover:bg-opacity-50 rounded cursor-pointer">
+        <a [routerLink]="item.url">
+          <img [src]="item.src" *ngIf="item.src">
+          {{item.label}}
+        </a>
+      </div>
+    </ng-container>
+
+  </div>
+</div>

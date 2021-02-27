@@ -1,0 +1,13 @@
+<div class="container grid items-stretch grid-cols-12 gap-2 px-2 mx-auto md:gap-4 xl:grid-cols-8 2xl:px-5">
+  <div class="relative z-50 col-span-12 md:col-span-3 lg:col-span-2 xl:col-span-1">
+    <app-side-menu></app-side-menu>
+  </div>
+  <div class="z-40 col-span-12 md:pt-2 md:col-span-9 lg:col-span-6 xl:col-span-5">
+    <router-outlet></router-outlet>
+  </div>
+  <div class="hidden col-span-4 pt-2 lg:block xl:col-span-2">
+    <div class="py-2">
+      <app-info-card></app-info-card>
+    </div>
+  </div>
+</div>
